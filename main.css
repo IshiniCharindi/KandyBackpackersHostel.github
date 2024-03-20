@@ -1,0 +1,430 @@
+#Rooms #r-sec .see, #About button {
+  transition: 0.3s ease-in;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Mulish, sans-serif;
+}
+
+/*nav Bar*/
+#nav {
+  margin: 6px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+#img-1 {
+  height: 110px;
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+#nav nav {
+  float: right;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 40px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: black;
+  font-family: Mulish, sans-serif;
+}
+
+nav ul li a:hover {
+  color: #c23616;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+.hamburger div {
+  width: 20px;
+  height: 3px;
+  margin: 5px 0;
+  background: black;
+}
+
+#cont {
+  border: 1px;
+  background-color: rgba(255, 121, 121, 0.5);
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hamburger {
+    display: block;
+  }
+  #nav nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    transition: 0.3s;
+  }
+  #nav #nav_check:checked ~ nav {
+    left: 0;
+  }
+  #nav nav ul {
+    display: block;
+  }
+  #nav nav ul li a {
+    margin: 5px 0;
+  }
+}
+/*Home*/
+#home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 3px;
+}
+
+#ch-1 {
+  width: 50vw;
+  height: 250%;
+  margin-top: 80px;
+  padding: 60px;
+  padding-bottom: 150px;
+  background-color: rgba(255, 121, 121, 0.1);
+  border-radius: 10px;
+}
+
+#ch-1 h1 {
+  font-size: 52px;
+  color: #040b11;
+}
+
+#ch-1 p {
+  font-size: 18px;
+  color: #2c3c4a;
+  display: flex;
+  justify-content: space-between;
+}
+
+#ch-2 {
+  width: 40vw;
+}
+
+#ch-2 img {
+  margin-left: -21px;
+  width: 40vw;
+  height: 90vh;
+}
+
+#ch-3 {
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  position: absolute;
+  margin-left: 77px;
+  margin-top: 20px;
+  width: 60%;
+}
+
+#ch-3 table {
+  padding: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#ch-3 table td {
+  padding: 5px;
+}
+
+#ch-3 table th {
+  padding-top: 10px;
+}
+
+#ch-3 table td button {
+  padding: 5px;
+  margin-left: 40px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+#ch-3 table td button:hover {
+  cursor: pointer;
+}
+
+#search {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+  background-color: #f69797;
+  border: none;
+  color: white;
+}
+
+#search:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/*About*/
+#About {
+  margin-top: 100px;
+}
+#About #ab-1 {
+  display: flex;
+}
+#About #ab-1 #ab-1-1 {
+  margin-left: 40px;
+  width: 50%;
+}
+#About #ab-1 #ab-1-1 h2 {
+  margin: 30px 10px;
+  font-family: Mulish, sans-serif;
+  font-size: 40px;
+}
+#About #ab-1 #ab-1-1 p {
+  font-size: 18px;
+  margin: 10px;
+}
+#About #ab-1 #ab-1-1 #ab-3 table {
+  margin: 10px;
+}
+#About #ab-1 #ab-1-1 #ab-3 table td {
+  font-size: 15px;
+  color: #2c3c4a;
+  padding: 10px;
+}
+#About #ab-1 #ab-1-1 #ab-3 table td img {
+  width: 80%;
+  height: 60%;
+}
+#About #ab-1 #ab-1-2 iframe {
+  margin-top: 50px;
+  width: 700px;
+  height: 450px;
+}
+#About button {
+  font-size: 20px;
+  padding: 10px;
+}
+#About button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#About #book {
+  margin-left: 50px;
+  background-color: #f69797;
+  color: white;
+  border: rgba(255, 121, 121, 0.5);
+  border-radius: 5px;
+}
+#About #more {
+  margin-left: 15px;
+  color: #f69797;
+  border: none;
+  background-color: white;
+}
+
+#Rooms {
+  margin-top: 100px;
+  margin-left: 10px;
+}
+#Rooms #r-main {
+  width: 70%;
+  height: 70vh;
+  border-radius: 5px;
+  background-color: rgba(255, 121, 121, 0.1);
+}
+#Rooms #r-main h2 {
+  margin-left: 50px;
+  padding-top: 90px;
+  font-family: Mulish, sans-serif;
+  font-size: 50px;
+}
+#Rooms #r-sec {
+  margin-top: -290px;
+  margin-left: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+#Rooms #r-sec .see {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  color: #f69797;
+  margin-top: 10px;
+}
+#Rooms #r-sec .see:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#Rooms #r-sec p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+#Rooms #r-sec #r-1 {
+  margin-right: 50px;
+}
+#Rooms #r-sec #r-2 {
+  margin-left: 50px;
+}
+#Rooms #r-sec #r-3 {
+  margin-left: 35px;
+}
+#Rooms #r-sec .room {
+  width: 50%;
+  height: 80%;
+}
+#Rooms #r-sec .room_1 {
+  width: 90%;
+}
+#Rooms #r-sec .room_2 {
+  width: 115%;
+}
+#Rooms #r-sec .room_3 {
+  width: 45%;
+}
+#News {
+  width: 100%;
+  height: 30%;
+  background-color: rgba(255, 121, 121, 0.1);
+  display: flex;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+#News #n-1 #n-2 #n-3 #n-4 h1 {
+  font-size: 200px;
+}
+#News #n-1 #n-2 #n-3 #n-4 small {
+  font-size: 5px;
+}
+#News img {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+}
+#News #n-1 {
+  margin: 25px;
+  margin-left: 150px;
+  padding: 5px;
+}
+#News #n-1 p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #2c3c4a;
+}
+#News #n-2 {
+  margin: 25px;
+  margin-left: 100px;
+  padding: 5px;
+}
+#News #n-2 p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #2c3c4a;
+}
+#News #n-3 {
+  margin: 25px;
+  margin-left: 100px;
+  padding: 5px;
+}
+#News #n-3 p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #2c3c4a;
+}
+#News #n-4 {
+  margin: 25px;
+  margin-left: 100px;
+  padding: 5px;
+}
+#News #n-4 p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #2c3c4a;
+}
+#News #n-4 img {
+  width: 150px;
+}
+
+#Contact {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+#Contact h2 {
+  font-size: 50px;
+}
+#Contact #c-t-1 {
+  margin-left: 50px;
+}
+#Contact #c-t-1 td {
+  padding: 20px;
+}
+#Contact #c-t-1 td #c-2 {
+  margin-left: 20px;
+}
+#Contact #c-t-2 {
+  margin-top: 25px;
+}
+#Contact #c-t-2 td {
+  padding: 10px;
+}
+
+#footer {
+  width: 100%;
+  background-color: #f69797;
+  margin-top: 50px;
+}
+#footer table {
+  color: white;
+  width: 80%;
+  height: 80%;
+  font-size: 15px;
+  margin-left: 150px;
+}
+#footer table tr {
+  margin: 20px;
+  margin-top: 10px;
+}
+#footer table th {
+  font-size: 30px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+#footer table td {
+  margin: 50px;
+  padding: 10px;
+}
+#footer table #logo {
+  height: 110px;
+  width: 200px;
+  margin-top: 10px;
+}
+#footer table a {
+  list-style-type: none;
+  color: white;
+}
+#footer table a:hover {
+  cursor: pointer;
+}
+
+#final {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

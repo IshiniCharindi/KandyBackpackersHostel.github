@@ -1,0 +1,532 @@
+
+$primary-color:rgba(255, 121, 121,0.5);
+$primary-font:Mulish, sans-serif;
+$secondary-color:#f69797;
+$third-color:rgba(255, 121, 121,0.1);
+
+%placeholder{
+    transition:0.3s ease-in;
+}
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family:$primary-font;
+}
+/*nav Bar*/
+#nav{
+   margin:6px;
+   width: 100%;
+   position:sticky;
+   top:0;
+   background-color: white;
+
+}
+#img-1{
+    height:110px;
+    width:200px;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+#nav nav{
+    float: right;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    margin:40px;
+
+}
+nav ul li a{
+    text-transform: uppercase;
+    font-size:16px;
+    color: black;
+    font-family:$primary-font;
+}
+nav ul li a:hover{
+    color:#c23616;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+
+    div{
+        width: 20px;
+        height: 3px;
+        margin: 5px 0;
+        background: black;
+    }
+}
+
+
+#cont{
+    border: 1px;
+    background-color:$primary-color;
+    padding:10px 30px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1200px){
+    .hamburger {
+        display: block;
+    }
+    #nav{
+        nav {
+            position: absolute;
+            width: 100%;
+            left: -100%;
+            top: 70px;
+            width: 100%;
+            background: #fff;
+            padding: 30px;
+            transition: 0.3s;
+        }
+        #nav_check:checked ~ nav {
+            left: 0;
+        }
+        nav ul {
+            display: block;
+
+            li a {
+                margin: 5px 0;
+            }
+        }
+
+    }
+}
+
+/*Home*/
+
+#home{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 3px;
+    // margin-right: 0;
+}
+#ch-1{
+    width:50vw;
+    height: 250%; 
+    margin-top: 80px;
+    padding:60px;
+    padding-bottom: 150px;
+    background-color:$third-color;
+    border-radius: 10px;
+    
+}
+#ch-1 {
+    h1{
+        font-size: 52px;
+        color: #040b11;
+    }
+}
+#ch-1 {
+    p{
+    
+        font-size: 18px;
+        color: #2c3c4a;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+#ch-2{
+    width:40vw;
+    
+}
+#ch-2 {
+    img{
+        margin-left: -21px;
+        width:40vw;
+        height:90vh;
+    }
+}
+
+#ch-3{
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    position:absolute;
+    margin-left: 77px;
+    margin-top: 20px;
+    width: 60%;
+   
+     
+}
+#ch-3{
+    table{
+        padding: 0;
+        width: 100%;
+        border-radius: 10px;
+       
+    }
+}
+#ch-3{
+    table{
+        td{
+            padding:5px;
+        }
+        
+    }
+}
+
+#ch-3{
+    table{
+        th{
+            padding-top:10px;
+        }
+        
+    }
+}
+
+
+#ch-3{
+    table{
+        td{
+           button{
+                padding:5px;
+                margin-left: 40px;
+                font-size: 15px;
+                border: none;
+                border-radius: 5px;
+                background-color: white;
+           &:hover{
+            cursor: pointer;
+           }
+            }
+        }
+        
+    }
+}
+
+#search{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding:5px;
+    background-color: $secondary-color;
+    border: none;
+    color: white;
+  
+}
+#search:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/*About*/
+
+#About{
+    margin-top: 100px;
+    #ab-1{
+        display: flex;
+        #ab-1-1{
+            margin-left: 40px;
+            width: 50%;
+            h2{
+               margin: 30px 10px;
+               font-family: $primary-font;
+               font-size: 40px;
+            }
+            p{
+                font-size: 18px;
+                margin: 10px;
+            }
+            #ab-3{
+                table{
+                    margin: 10px;
+                    
+                    td{
+                        font-size: 15px;
+                        color: #2c3c4a;
+                        padding: 10px;
+
+                        img{
+                            width:80%;
+                            height:60%
+                        }
+                    }
+                }
+            }
+        }
+        #ab-1-2{
+            iframe{
+                margin-top: 50px;
+                width:700px;
+                height:450px;
+            }
+            
+        }
+    }
+    button{
+        font-size: 20px;
+        padding: 10px;
+        @extend %placeholder;
+        
+        &:hover{
+           cursor:pointer;
+            transform: scale(1.1);
+        } 
+        
+    }
+    #book{
+        margin-left: 50px;
+        background-color:  $secondary-color;
+        color: white;
+        border: $primary-color;
+        border-radius: 5px;
+    }
+    #more{
+        margin-left: 15px;
+        color:  $secondary-color;
+        border: none;
+        background-color: white;
+    }
+}
+
+// Rooms
+
+#Rooms {
+    margin-top: 100px;
+    margin-left: 10px;
+
+    #r-main {
+        width: 70%;
+        height: 70vh;
+        border-radius: 5px;
+        background-color: $third-color;
+
+        h2 {
+            margin-left: 50px;
+            padding-top: 90px;
+            font-family: $primary-font;
+            font-size: 50px;
+        }
+    }
+
+    #r-sec {
+        margin-top: -290px;
+        margin-left: 110px;
+        display: flex;
+        justify-content:space-between;
+
+        .see{
+            border: none;
+            background-color: white;
+            font-size: 20px;
+            color: $secondary-color;
+            margin-top: 10px;
+            @extend %placeholder;
+        }
+        .see:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        p{
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        #r-1 {
+            margin-right: 50px;
+            //background-color:#c23616;
+            //border: 2px solid black;
+
+
+        }
+        #r-2 {
+            margin-left: 50px;
+
+        }
+        #r-3 {
+            margin-left: 35px;
+
+        }
+
+        .room {
+            width: 50%;
+            height: 80%;
+        }
+
+        .room_1 {
+            width: 50%+40 ;
+
+        }
+        .room_2{
+            width: 50%+65;
+        }
+        .room_3{
+            width: 50%-5;
+        }
+        #r-1-1 {
+
+        }
+    }
+
+}
+//New
+
+
+
+//News
+
+#News {
+    width: 100%;
+    height: 30%;
+    background-color: $third-color;
+    display: flex;
+    margin-left: 10px;
+    border-radius: 5px;
+
+    #n-1 #n-2 #n-3 #n-4 {
+
+        h1 {
+            font-size: 200px;
+        }
+
+        small {
+            font-size: 5px;
+        }
+
+    }
+
+    img {
+        width: 200px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    #n-1 {
+        margin: 25px;
+        margin-left: 150px;
+        padding: 5px;
+
+        p {
+            font-size: 20px;
+            margin-top: 5px;
+            color: #2c3c4a;
+        }
+    }
+
+    #n-2 {
+        margin: 25px;
+        margin-left: 100px;
+        padding: 5px;
+
+        p {
+            font-size: 20px;
+            margin-top: 5px;
+            color: #2c3c4a;
+        }
+    }
+
+    #n-3 {
+        margin: 25px;
+        margin-left: 100px;
+        padding: 5px;
+
+        p {
+            font-size: 20px;
+            margin-top: 5px;
+            color: #2c3c4a;
+        }
+    }
+
+    #n-4 {
+        margin: 25px;
+        margin-left: 100px;
+        padding: 5px;
+
+        p {
+            font-size: 20px;
+            margin-top: 5px;
+            color: #2c3c4a;
+        }
+
+        img {
+            width: 150px;
+        }
+
+    }
+}
+
+#Contact{
+    margin-top: 50px;
+    margin-left: 10px;
+
+    h2{
+        font-size: 50px;
+    }
+    #c-t-1{
+        margin-left: 50px;
+        td{
+            padding: 20px;
+            #c-2{
+                margin-left: 20px;
+            }
+        }
+
+
+    }
+
+   #c-t-2{
+        margin-top: 25px;
+        td{
+            padding: 10px;
+        }
+    }
+}
+
+#footer{
+    width: 100%;
+    background-color:$secondary-color;
+    margin-top: 50px;
+
+    table{
+        color: white;
+        width:80%;
+        height: 80%;
+        font-size: 15px;
+        margin-left: 150px;
+
+
+        tr{
+            margin: 20px;
+            margin-top: 10px;
+        }
+        th{
+            font-size: 30px;
+            margin-top: 50px;
+            padding-top: 50px;
+        }
+        td{
+            margin: 50px;
+            padding: 10px;
+
+        }
+
+        #logo{
+            height:110px;
+            width:200px;
+            margin-top: 10px;
+
+        }
+        a{
+            list-style-type: none;
+            color: white;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+
+    }
+}
+
+#final{
+    text-align: center;
+}
